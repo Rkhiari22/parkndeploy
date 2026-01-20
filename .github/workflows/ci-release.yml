@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Build frontend
-        working-directory: ${{ env.FRONTEND_DIR }}
+        working-directory: ./frontend
         run: npm run build
         env:
           VITE_APP_VERSION: ${{ github.ref_name }}
